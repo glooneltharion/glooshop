@@ -1,0 +1,258 @@
+/*GENERAL*/
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 50px auto;
+    width: 65%;
+    color: #fff;
+}
+
+h2 {
+    color: #835aa8;
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-moz-selection{ background:#9b469b; color: #fff; text-shadow: none; }
+::selection{ background: #9b469b; color: #fff; text-shadow: none; }
+
+/*TOP-NAV*/
+
+.top-nav {
+    color: #835aa8;
+    font-size: 50px;
+    border-bottom: 3px solid #835aa8;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.top-nav a {
+    color: #835aa8;
+    font-weight: bold;
+}
+
+/*NAV-BTN*/
+
+.nav-btn, .search-box, .filter-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-btn {
+    margin: 25px 0;
+}
+
+.nav-btn a {
+    background: #bc4f9e;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.nav-btn a:hover, button:hover, .filter input:hover {
+    background: #9b469b;
+    cursor: pointer;
+}
+
+/*FORMS*/
+
+.search label, .filter label {
+    font-size: 20px;
+    color: #bc4f9e;
+}
+
+.search input, .filter input.price {
+    height: 40px;
+    font-size: 30px;
+    color: #bc4f9e;
+    background: #fff;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 2px solid #835aa8;
+    margin-right: 0;
+}
+
+
+.search input:focus, .filter input.price:focus {
+    outline: none;
+    border: 2px solid #bc4f9e;
+
+}
+
+button, .filter input {
+    background: #bc4f9e;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 25px;
+    border: none;
+    height: 44px;
+    padding: 5px;
+}
+
+button {
+    margin-left: 5px;
+    width: 120px;
+}
+
+::placeholder {
+    color: #9b469b;
+}
+
+/*SEARCH FORM*/
+
+.search input {
+    width: 80%;
+}
+
+.filter input.price {
+    box-sizing: border-box;
+    width: 60%;
+    height: 54px;
+}
+
+/*FILTER FORM*/
+
+.filter label {
+    margin-left: 40%;
+}
+
+.filter input {
+    padding: 5px 15px;
+    margin-right: 10px;
+}
+
+/*TABLE*/
+
+.table {
+    margin-top: 25px;
+    font-size: 20px;
+    width: 100%;
+}
+
+th {
+    background: #835aa8;
+    color: #fff;
+    width: 16%;
+    height: 90px;
+}
+
+th:nth-child(3) {
+    width: 36%;
+}
+
+td {
+    padding: 10px 0;
+    color: #4a205f;
+    text-align: center;
+}
+
+td:nth-child(4), td:nth-child(5) {
+    font-size: 30px;
+}
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 1460px) {
+    body {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1300px) {
+    body {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1120px) {
+    body {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1005px) {
+    .filter-box {
+        flex-direction: row-reverse;
+    }
+
+    .nav-btn {
+        flex-wrap: wrap;
+    }
+
+    .nav-btn a {
+        margin-top: 5px;
+    }
+
+    .filter label {
+        margin-left: 0;
+    }
+
+    .filter input {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    .filter input.price {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 985px) {
+    .nav-btn a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 935px) {
+    .filter-box {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .filter-btn {
+        margin-top: 5px;
+    }
+
+    .filter input {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .filter input.price {
+        margin-right: 0;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1920px) {
+    body {
+        width: 55%;
+    }
+}
+
+@media (min-width: 2300px) {
+    body {
+        width: 45%;
+    }
+}
+
+@media (min-width: 3000px) {
+    body {
+        width: 35%;
+    }
+}
+
+
